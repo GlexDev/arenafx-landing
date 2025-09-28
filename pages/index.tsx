@@ -1,11 +1,9 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Navbar from "../components/Navbar";
+import ArenaFXHero from "../components/ArenaFXHero";
 import RulesSection from "../components/RulesSection";
 import LeaderboardSection from "../components/LeaderboardSection";
 import Footer from "../components/Footer";
-
-const ArenaFXHero = dynamic(() => import("../components/ArenaFXHero"), { ssr: false });
 
 export default function Home() {
   return (
@@ -24,4 +22,3 @@ export default function Home() {
     </>
   );
 }
-
